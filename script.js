@@ -8,10 +8,10 @@ $(document).keydown(function(e){
 
 //using mouse click
 
-  $(".drum").click(function(e){
-    var letter2 = e.innerHTML();
-    hovertext(letter2);
-    sound(letter2);
+  $("button").click(function(e){
+    var clicked = $(this).text();
+    hovertext(clicked);
+    sound(clicked);
   });
  
 
